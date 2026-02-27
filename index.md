@@ -3,22 +3,22 @@ layout: home
 title: Home
 ---
 
-# 欢迎来到我的博客 👋
+# Welcome to My Blog 👋
 
-这里是我的个人技术博客，主要分享：
+This is my personal tech blog where I share:
 
-- 🔐 **区块链安全** - 钱包、智能合约、密码学
-- 🤖 **AI & 自动化** - Agent swarm、LLM 应用
-- 💻 **开发实践** - 工具、架构、最佳实践
+- 🔐 **Blockchain Security** - Wallets, smart contracts, cryptography
+- 🤖 **AI & Automation** - Agent swarms, LLM applications
+- 💻 **Engineering** - Tools, architecture, best practices
 
-## 最新文章
+## Recent Posts
 
 {% for post in site.posts limit:5 %}
 - [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%Y-%m-%d" }}
 {% endfor %}
 
-## 关于我
+## About Me
 
-区块链从业者，关注安全和用户体验。正在用 AI 提升开发效率。
+Blockchain practitioner focused on security and user experience. Currently exploring AI-powered development workflows.
 
 - GitHub: [@aigeneralstore](https://github.com/aigeneralstore)

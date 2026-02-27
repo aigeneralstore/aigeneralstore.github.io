@@ -4,28 +4,28 @@ title: About
 permalink: /about/
 ---
 
-# 关于我
+# About Me
 
-区块链从业者，专注于安全和用户体验。
+Blockchain practitioner focused on security and user experience.
 
-## 背景经历
+## Background
 
-- 🔐 **钱包安全** - 多链钱包开发，签名安全
-- 💼 **企业解决方案** - Custody、多签名
-- 🤖 **AI 自动化** - 用 AI 提升开发效率
+- 🔐 **Wallet Security** - Multi-chain wallet development, signature security
+- 💼 **Enterprise Solutions** - Custody, multi-signature systems
+- 🤖 **AI Automation** - Using AI to boost development efficiency
 
-## 技术栈
+## Tech Stack
 
-- **区块链**: Ethereum, Solana, Bitcoin, EOS
-- **前端**: React, TypeScript, Next.js
-- **后端**: Node.js, Go, Rust
-- **安全**: 密码学、智能合约审计
+- **Blockchain**: Ethereum, Solana, Bitcoin, EOS
+- **Frontend**: React, TypeScript, Next.js
+- **Backend**: Node.js, Go, Rust
+- **Security**: Cryptography, smart contract auditing
 
-## 联系方式
+## Contact
 
 - GitHub: [@aigeneralstore](https://github.com/aigeneralstore)
 - Telegram: @tom
 
 ---
 
-*这个博客用 Jekyll 构建，托管在 GitHub Pages 上。*
+*This blog is built with Jekyll and hosted on GitHub Pages.*
