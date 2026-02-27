@@ -1,0 +1,44 @@
+title: Tom's Blog
+description: 个人技术博客 - 区块链、AI、安全
+author: Tom
+email: 
+baseurl: ""
+url: "https://aigeneralstore.github.io"
+twitter_username: 
+github_username: aigeneralstore
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Permalinks
+permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Tom"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
