@@ -7,34 +7,18 @@ title: Home
 
 I write about building secure, intelligent systems.
 
----
+## All Posts
 
-## 🔐 Cryptography
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%Y-%m-%d" }} • {{ post.category }}
+{% endfor %}
 
-MPC, Zero-Knowledge Proofs, Threshold Signatures, Post-Quantum
-
-[Read Posts →](/cryptography/)
-
----
-
-## ⛓️ Blockchain
-
-Wallet Security, Smart Contracts, Multi-Chain, Enterprise
-
-[Read Posts →](/blockchain/)
+{% if site.posts.size == 0 %}
+*No posts yet.*
+{% endif %}
 
 ---
 
-## 🤖 AI Agents
+**About** — Blockchain practitioner focused on security and user experience.
 
-Agent Architecture, Code Agents, Multi-Agent Systems, LLM Engineering
-
-[Read Posts →](/ai-agents/)
-
----
-
-## About Me
-
-Blockchain practitioner focused on security and user experience. Exploring AI-powered development workflows.
-
-- GitHub: [@aigeneralstore](https://github.com/aigeneralstore)
+GitHub: [@aigeneralstore](https://github.com/aigeneralstore)
