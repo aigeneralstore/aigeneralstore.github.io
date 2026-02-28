@@ -37,8 +37,26 @@ To achieve a 10,000x speedup over prior state-of-the-art MPC solutions, Nudge in
 
 Fixed-point arithmetic requires constant "truncation" (shifting bits) to prevent numbers from growing too large. Traditionally, this requires a "bit-decomposition" protocol—a slow, circuit-based process.
 
-Nudge proves that under specific conditions, truncation can be performed locally by each server without any communication, reducing a multi-round operation to zero network overhead.
+Nudge implements a probabilistic truncation protocol that performs arithmetic right-shifts directly on secret shares without ever breaking them into individual bits. This reduces the truncation cost from a major bottleneck to a near-zero operation.
+
+### B. Lemma 4.4: Approximate Normalization
+
+Normalizing a vector (v/‖v‖) requires calculating a square root and a reciprocal—two of the most "expensive" operations in cryptography.
+
+Nudge uses an Approximate Normalization approach. It reveals only the *bit-length* of the vector's norm (a non-sensitive scale factor) and then uses a low-degree polynomial fit to compute the reciprocal. This provides enough accuracy for high-quality recommendations while bypassing the need for complex ZK circuits.
+
+## 4. Experimental Results: The Netflix Benchmark
+
+The researchers tested Nudge on the industry-standard Netflix dataset (100 million ratings).
+
+| Metric | Traditional MPC | Nudge (3-Server) | Performance Gain |
+| :--- | :--- | :--- | :--- |
+| Recommendation Latency | ~1.2 Hours | 0.38 Seconds | > 10,000x |
+| Communication Cost | > 10 GB | 2.4 MB | ~4,000x |
+| Training (10M Ratings) | Days | 14.2 Minutes | Massive |
+
+Remarkably, despite these optimizations, Nudge maintains the same recommendation accuracy as non-private systems, proving that privacy doesn't have to come at the cost of utility.
 
 ---
 
-*This represents a major step forward for privacy-preserving ML—proving that we don't have to choose between utility and privacy.*
+*For more technical details, you can refer to the [Nudge research paper](https://eprint.iacr.org/) or the latest zkMesh recap. For the identity layer, see the Cryptographic Framework for Proof of Personhood.*
