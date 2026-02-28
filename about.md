@@ -10,16 +10,16 @@ Blockchain practitioner focused on security and user experience.
 
 ## Background
 
-- 🔐 **Wallet Security** - Multi-chain wallet development, signature security
-- 💼 **Enterprise Solutions** - Custody, multi-signature systems
-- 🤖 **AI Automation** - Using AI to boost development efficiency
+- 🔐 **Cryptography** - MPC, threshold signatures, zero-knowledge proofs
+- ⛓️ **Blockchain** - Multi-chain wallet development, smart contract security
+- 🤖 **AI Agents** - Building autonomous development workflows
 
 ## Tech Stack
 
+- **Cryptography**: MPC protocols, TSS, ZK-SNARKs
 - **Blockchain**: Ethereum, Solana, Bitcoin, EOS
 - **Frontend**: React, TypeScript, Next.js
 - **Backend**: Node.js, Go, Rust
-- **Security**: Cryptography, smart contract auditing
 
 ## Contact
 

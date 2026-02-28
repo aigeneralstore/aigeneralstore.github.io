@@ -1,5 +1,5 @@
 title: Tom's Blog
-description: Personal tech blog - Blockchain, AI, Security
+description: Personal tech blog - Cryptography, Blockchain, AI Agents
 author: Tom
 email: 
 baseurl: ""
@@ -26,6 +26,12 @@ paginate_path: "/blog/page:num/"
 # Permalinks
 permalink: /blog/:year/:month/:day/:title/
 
+# Categories
+categories:
+  - cryptography
+  - blockchain
+  - ai-agents
+
 # Defaults
 defaults:
   - scope:
@@ -34,6 +40,25 @@ defaults:
     values:
       layout: "post"
       author: "Tom"
+  - scope:
+      path: "_posts/cryptography"
+    values:
+      category: "cryptography"
+  - scope:
+      path: "_posts/blockchain"
+    values:
+      category: "blockchain"
+  - scope:
+      path: "_posts/ai-agents"
+    values:
+      category: "ai-agents"
+
+# Navigation
+header_pages:
+  - cryptography.md
+  - blockchain.md
+  - ai-agents.md
+  - about.md
 
 # Exclude from processing
 exclude:

@@ -3,22 +3,38 @@ layout: home
 title: Home
 ---
 
-# Welcome to My Blog 👋
+# Welcome 👋
 
-This is my personal tech blog where I share:
+I write about building secure, intelligent systems.
 
-- 🔐 **Blockchain Security** - Wallets, smart contracts, cryptography
-- 🤖 **AI & Automation** - Agent swarms, LLM applications
-- 💻 **Engineering** - Tools, architecture, best practices
+---
 
-## Recent Posts
+## 🔐 Cryptography
 
-{% for post in site.posts limit:5 %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%Y-%m-%d" }}
-{% endfor %}
+MPC, Zero-Knowledge Proofs, Threshold Signatures, Post-Quantum
+
+[Read Posts →](/cryptography/)
+
+---
+
+## ⛓️ Blockchain
+
+Wallet Security, Smart Contracts, Multi-Chain, Enterprise
+
+[Read Posts →](/blockchain/)
+
+---
+
+## 🤖 AI Agents
+
+Agent Architecture, Code Agents, Multi-Agent Systems, LLM Engineering
+
+[Read Posts →](/ai-agents/)
+
+---
 
 ## About Me
 
-Blockchain practitioner focused on security and user experience. Currently exploring AI-powered development workflows.
+Blockchain practitioner focused on security and user experience. Exploring AI-powered development workflows.
 
 - GitHub: [@aigeneralstore](https://github.com/aigeneralstore)
